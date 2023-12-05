@@ -1,6 +1,6 @@
 Name:		python-responses
-Version:	0.22.0
-Release:	2
+Version:	0.24.1
+Release:	1
 Source0:	https://files.pythonhosted.org/packages/source/r/responses/responses-%{version}.tar.gz
 Summary:	A utility library for mocking out the `requests` Python library.
 URL:		https://pypi.org/project/responses/
