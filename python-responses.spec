@@ -1,19 +1,21 @@
 Name:		python-responses
-Version:	0.26.2
+Version:	0.26.3
 Release:	1
 Source0:	https://files.pythonhosted.org/packages/source/r/responses/responses-%{version}.tar.gz
 Summary:	A utility library for mocking out the `requests` Python library.
 URL:		https://pypi.org/project/responses/
 License:	Apache 2.0
 Group:		Development/Python
-BuildRequires:	python-setuptools
+BuildRequires:	pkgconfig(python3)
+BuildRequires:	python%{pyver}dist(setuptools)
+BuildRequires:	python%{pyver}dist(wheel)
 BuildArch:	noarch
 
 %description
 A utility library for mocking out the `requests` Python library.
 
 %prep
-%autosetup -p1 -n responses-0.26.2
+%autosetup -p1 -n responses-%{version}
 
 %build
 python setup.py build
